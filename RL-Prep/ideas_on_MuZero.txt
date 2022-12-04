@@ -1,0 +1,15 @@
+Study a simplified version of MuZero (tabular case, on-policy)
+Langevin MCTS
+Off-policy corrections for MuZero (e.g., importance sampling)
+Use another action-selection policy instead of UCT
+Deal with non-determinism
+Deal with partial-observability
+Force the dynamics model to enable easy planning (e.g., having linear dynamics model)
+Improve exploration (currently based on Dirichlet noise and visit counts)
+Is exploration improved by having uncertainty both over dynamics model and value function (in comparison with only uncertainty over value function)
+Why are so few time-steps unrolled?
+Why are rewards and values encoded categorically?
+Reuse MCTS subtrees
+Why is prioritized experience replay needed?
+Why use k-step returns for value targets? (lambda return?)
+Use the reparametrization trick for tree search 

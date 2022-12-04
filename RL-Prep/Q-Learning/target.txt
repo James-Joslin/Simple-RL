@@ -1,0 +1,1 @@
+CartPole-v1 - solved by getting an average reward of 195.0 over 100 consecutive trials.

@@ -18,7 +18,7 @@ if __name__ == '__main__':
     # env = gym.make('ALE/AirRaid-v5')
     env = gym.make("CartPole-v1")
     agent = Agent(alpha=5e-4, n_actions=env.action_space.n)
-    n_games = 1000
+    n_games = 500
 
     if not os.path.exists("./logs"):
         os.makedirs("./logs/plots")
@@ -42,7 +42,7 @@ if __name__ == '__main__':
         score = 0
         while not done:
             action = agent.choose_action(observation)[0]
-            print(action, action.shape)
+            # print(action, action.shape)
             observation_, reward, done, info = env.step(action)
             score += reward
             if not load_checkpoint:

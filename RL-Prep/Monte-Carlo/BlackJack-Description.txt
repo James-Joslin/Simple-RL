@@ -1,0 +1,9 @@
+Action Space - Discrete(2)
+ - stick (0)
+ - hit (1)
+
+Observation Space - Tuple(Discrete(32), Discrete(11), Discrete(2))
+The observation consists of a 3-tuple containing:
+     - the player’s current sum
+     - the value of the dealer’s one showing card (1-10 where 1 is ace) 
+     - and whether the player holds a usable ace (0 or 1) - Actually False or True.
